@@ -1,0 +1,345 @@
+/* Entire Page*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* HEADER SECTION */
+.main-header {
+    background-color: #f9f7f2; 
+    padding: 15px 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,1.0);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    position: absolute;
+    margin-top: 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* This creates the gap in the middle */
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 50px; 
+    width: auto;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    color: #2d4a3e; 
+    letter-spacing: 1px;
+}
+
+/* NAVIGATION BAR LINKS */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between links */
+    white-space: nowrap; /* Prevents links from jumping to a new line */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f6920f;
+}
+
+/* The "List Property" Button */
+.btn-list {
+    background-color: #cc825a; 
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 50px; /* Makes it pill-shaped */
+    font-size: 0.9rem;
+}
+
+.btn-list:hover {
+    background-color: #b56e48;
+}
+/* CONTACT US */
+body {
+    background-attachment: #ffffffff;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+    padding: 0px;
+    padding-top: 80px;
+    margin-bottom: 0;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto;
+    background-color: #fdfaf5;
+    border-radius: 40px;
+    overflow: hidden;
+    align-items: stretch;
+    margin-bottom: 50px;
+
+}
+
+/* Form Section (Left) */
+.contact-form {
+    flex: 1.2;
+    padding: 60px;
+}
+
+.contact-form h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #0f1310;
+    margin-bottom: 20px;
+}
+
+.contact-form h1 span {
+    font-style: italic;
+    font-weight: 700;
+    color: orange;
+}
+
+.contact-form p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #333;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2d4731;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #3e5f43;
+}
+
+/* Sidebar Section (Right) */
+.contact-sidebar {
+    flex: 0.8;
+    background-color: #2d472c;
+    color: #ffffff;
+    padding: 60px 40px;
+    border-radius: 40px 0 0 40px;
+}
+
+.info-group {
+    margin-bottom: 35px;
+}
+
+.info-group h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info-group h2 span {
+    color: #d17a43;
+}
+
+.info-group p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.phone-link,
+.email-link {
+    color: #d17a43;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+.map-placeholder img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-sidebar {
+        border-radius: 0;
+    }
+}
+
+/* FOOTER SECTION */
+.footer {
+    background-color: #121212; /* Deep charcoal/black */
+    color: #ffffff;
+    padding: 80px 0 30px;
+    margin-top: 50px; /* Space between your contact card and the footer */
+    width: 100%;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
+/* Brand Section */
+.footer-brand {
+    flex: 2;
+    min-width: 250px;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 1.6rem;
+    color: #d48e5e; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.brand-name span {
+    color: #4c7c54; 
+}
+
+.brand-tagline {
+    color: #a0a0a0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    max-width: 350px;
+}
+
+/* Column General Styles */
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h4 {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    position: relative;
+    color: #fff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #d48e5e; 
+}
+
+.footer-col p {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid #2a2a2a;
+    margin-top: 60px;
+    padding-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.bottom-socials a {
+    margin-left: 20px;
+    color: #666;
+    text-decoration: none;
+}
+
+.bottom-socials a:hover {
+    color: #fff;
+}
